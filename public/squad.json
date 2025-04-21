@@ -1,0 +1,23 @@
+[
+    { "id": 1, "name": "Virat Kohli", "country": "India", "role": "Batsman", "battingStyle": "Right-hand bat", "bowlingStyle": "Right-arm medium", "price": 1800 },
+    { "id": 2, "name": "Joe Root", "country": "England", "role": "Batsman", "battingStyle": "Right-hand bat", "bowlingStyle": "Right-arm offbreak", "price": 1826 },
+    { "id": 3, "name": "Pat Cummins", "country": "Australia", "role": "Bowler", "battingStyle": "Right-hand bat", "bowlingStyle": "Right-arm fast", "price": 1660 },
+    { "id": 4, "name": "Kane Williamson", "country": "New Zealand", "role": "Batsman", "battingStyle": "Right-hand bat", "bowlingStyle": "Right-arm offbreak", "price": 1490 },
+    { "id": 5, "name": "Shaheen Afridi", "country": "Pakistan", "role": "Bowler", "battingStyle": "Left-hand bat", "bowlingStyle": "Left-arm fast", "price": 1320 },
+    { "id": 6, "name": "David Warner", "country": "Australia", "role": "Batsman", "battingStyle": "Left-hand bat", "bowlingStyle": "Right-arm legbreak", "price": 1410 },
+    { "id": 7, "name": "Rashid Khan", "country": "Afghanistan", "role": "Bowler", "battingStyle": "Right-hand bat", "bowlingStyle": "Right-arm legbreak", "price": 1245 },
+    { "id": 8, "name": "Shubman Gill", "country": "India", "role": "Batsman", "battingStyle": "Right-hand bat", "bowlingStyle": "Right-arm offbreak", "price": 1100 },
+    { "id": 9, "name": "Jos Buttler", "country": "England", "role": "Wicketkeeper Batsman", "battingStyle": "Right-hand bat", "bowlingStyle": "N/A", "price": 1079 },
+    { "id": 10, "name": "Trent Boult", "country": "New Zealand", "role": "Bowler", "battingStyle": "Right-hand bat", "bowlingStyle": "Left-arm fast-medium", "price": 1162 },
+    { "id": 11, "name": "Steve Smith", "country": "Australia", "role": "Batsman", "battingStyle": "Right-hand bat", "bowlingStyle": "Right-arm legbreak", "price": 1743 },
+    { "id": 12, "name": "Babar Azam", "country": "Pakistan", "role": "Batsman", "battingStyle": "Right-hand bat", "bowlingStyle": "Right-arm offbreak", "price": 1660 },
+    { "id": 13, "name": "Mohammad Shami", "country": "India", "role": "Bowler", "battingStyle": "Right-hand bat", "bowlingStyle": "Right-arm fast", "price": 1150 },
+    { "id": 14, "name": "Ben Stokes", "country": "England", "role": "All-Rounder", "battingStyle": "Left-hand bat", "bowlingStyle": "Right-arm fast-medium", "price": 1577 },
+    { "id": 15, "name": "Quinton de Kock", "country": "South Africa", "role": "Wicketkeeper Batsman", "battingStyle": "Left-hand bat", "bowlingStyle": "N/A", "price": 1328 },
+    { "id": 16, "name": "Mujeeb Ur Rahman", "country": "Afghanistan", "role": "Bowler", "battingStyle": "Right-hand bat", "bowlingStyle": "Right-arm offbreak", "price": 996 },
+    { "id": 17, "name": "Hardik Pandya", "country": "India", "role": "All-Rounder", "battingStyle": "Right-hand bat", "bowlingStyle": "Right-arm medium-fast", "price": 1200 },
+    { "id": 18, "name": "Fakhar Zaman", "country": "Pakistan", "role": "Batsman", "battingStyle": "Left-hand bat", "bowlingStyle": "Slow left-arm orthodox", "price": 1079 },
+    { "id": 19, "name": "Rohit Sharma", "country": "India", "role": "Batsman", "battingStyle": "Right-hand bat", "bowlingStyle": "Right-arm offbreak", "price": 1700 },
+    { "id": 20, "name": "Mitchell Starc", "country": "Australia", "role": "Bowler", "battingStyle": "Left-hand bat", "bowlingStyle": "Left-arm fast", "price": 1490 }
+  ]
+  
