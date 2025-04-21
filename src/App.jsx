@@ -5,7 +5,7 @@ import Players from './players/Players'
 function App() {
   const [players, setPlayers] = useState([]);
   useEffect(() => {
-    fetch('squad.json').then(res=>res.json).then(data=>setPlayers(data))
+    fetch('squad.json').then(res=>res.json()).then(data=>setPlayers(data))
   }, [])
   const [balance, setBalance] = useState(0);
   const addBalance = ()=> {
@@ -15,8 +15,8 @@ function App() {
     <>
     
       <Head addBalance={addBalance} balance={balance}></Head>
-      <Players></Players>
-        
+      <Players players = {players}></Players>
+      
     </>
   )
 }
