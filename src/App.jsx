@@ -11,11 +11,22 @@ function App() {
   const addBalance = ()=> {
     setBalance(prevBal=> prevBal += 10000);
   }
+  const buyPlayer = (price) => {
+    setBalance((prev) => {
+      if (prev <= 0 || prev < price) {
+        return prev; 
+      } else {
+        return prev -= price; 
+      }
+    });
+  };
+  
+  
   return (
     <>
     
       <Head addBalance={addBalance} balance={balance}></Head>
-      <Players players = {players}></Players>
+      <Players players = {players} buyPlayer = {buyPlayer}></Players>
       
     </>
   )
