@@ -6,19 +6,26 @@ const Players = ({ players }) => {
 	const handleAvailable = () => {
 		setAvailable((prev) => !prev);
 	};
-    const [selected, setSelected] = useState([]);
-    const [select, setSelect] = useState(false);
-    const handleSelect = (player) => {
-        setSelect((prev) => !prev)
-        if (select === true) {
-            setSelected((prev)=> [...prev,player])
-        }
-    }
-    console.log(selected);
-    return (
+	const [selected, setSelected] = useState([]);
+	
+	const handleSelect = (player) => {
+		const checkbefore = selected.find((p) => p.id == player.id);
+		if (!checkbefore && selected.length <=5){
+			setSelected((prev)=> [...prev,player])
+		}
+		// setSelected((prev) => {
+		// 	const checkSelectedPlayers = prev.find((p) => p.id == players.id);
+		// 	if (!checkSelectedPlayers) {
+		// 		return [...prev, player]
+		// 	}
+		// 	return prev
+		// }
+		// )
+	}; 
+	return (
 		<div>
 			<div className="mt-10 flex justify-between">
-				<h3>Available Players</h3>
+				{available ? <h3>Available PLayer</h3> : <h3>Selected Player({selected.length }/6)</h3>}
 				<div className="flex gap-6">
 					<button
 						className="btn bg-amber-300"
@@ -30,18 +37,17 @@ const Players = ({ players }) => {
 						Selected
 					</button>
 				</div>
-            </div>
-            {/* available palyer section */}
+			</div>
+			{/* available palyer section */}
 			{available &&
-                players.map((player) => <Player player={player} handleSelect={() => handleSelect(player)}></Player>)}
-            {/* selected player section  */}
-            {!available && selected.map((player) =>
-                <div>
-                    <p>{player.name}</p>
-            </div>
-            )}
+				players.map((player) => <Player player={player} handleSelect={() => handleSelect(player)}></Player>)}
+			{/* selected player section  */}
+			{!available && selected.map((player) =>
+				<div>
+					<p>{player.name}</p>
+				</div>
+			)}
 		</div>
 	);
 };
-
 export default Players;
