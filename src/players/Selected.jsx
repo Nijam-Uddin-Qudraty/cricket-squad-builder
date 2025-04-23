@@ -44,6 +44,9 @@ const Selected = ({ player, removeSelectedPlayer }) => {
 	);
 };
 
-Selected.propTypes = {};
+Selected.propTypes = {
+	player: PropTypes.object.isRequired,
+	removeSelectedPlayer: PropTypes.func.isRequired
+};
 
 export default Selected;

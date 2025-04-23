@@ -4,7 +4,24 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    margin:50px 150px 50px 150px;
+body {
     font-family: 'Sora', sans-serif;
+}
+
+@media (min-width: 768px) {
+    body {
+        margin: 10px 10px 10px 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        margin: 10px 10px 10px 10px;
+    }
+}
+
+@media (min-width: 1280px) {
+    body { 
+       margin: 50px 150px 50px 150px;
+    }
 }

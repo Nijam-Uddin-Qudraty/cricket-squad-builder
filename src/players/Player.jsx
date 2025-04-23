@@ -25,7 +25,7 @@ const Player = ({player,handleSelect}) => {
                 <p className='font-semibold mt-4' >{role == 'Bowler' ? bowlingStyle : battingStyle}</p>
                 <div className='flex justify-between mt-3'>
                 <p className='font-semibold'>Price : {price}$</p>
-                    <button className='bg-lime-300 rounded-xl w-40 h-10 px-2 text-center' onClick={() => handleSelect(player)}>Choose Player</button>
+                    <button className='active:bg-lime-300 rounded-xl w-40 h-10 px-2 text-center' onClick={() => handleSelect(player)}>Choose Player</button>
                     </div>
             </div>
         </div>

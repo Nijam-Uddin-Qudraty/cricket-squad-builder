@@ -2,15 +2,17 @@ import React from "react";
 import logo from "../assets/logo.png";
 import Banner from "./banner";
 import { BsCoin } from "react-icons/bs";
+import PropTypes from "prop-types";
 const Head = ({ addBalance, balance }) => {
 	return (
 		<div>
 			<nav>
-				<div className="max-w-screen-xl mb-6 flex justify-between items-center  ">
-					<div>
+				<div className="max-w-screen-xl mb-6 lg:flex lg:justify-between lg:items-center  ">
+					{/* web icon/logo */}
+					<div className="flex lg:justify-start justify-center">
 						<img src={logo} className="" alt="" />
 					</div>
-
+					{/* nav ul list for navigaion  */}
 					<div className="flex gap-5 ">
 						<ul className="list-none flex gap-5 text-slate-500">
 							<li>Home</li>
@@ -18,7 +20,7 @@ const Head = ({ addBalance, balance }) => {
 							<li>Schedule</li>
 							<li>Teams</li>
 						</ul>
-
+						{/* balance btn/wallet  */}
 						<div>
 							<p className="font-bold flex gap-4 ">
 								{balance} coins
@@ -237,5 +239,9 @@ const Head = ({ addBalance, balance }) => {
 		</div>
 	);
 };
+Head.PropTypes = {
+	addBalance: PropTypes.func.isRequired,
+	balance: PropTypes.number.isRequired
+}
 
 export default Head;

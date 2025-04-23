@@ -1,6 +1,7 @@
 import React from 'react';
 import banner_img from '../assets/banner-main.png'
 import bg from '../assets/bg-shadow.png';
+import PropTypes from 'prop-types';
 
 const Banner = ({addBalance}) => {
     return (
@@ -17,5 +18,7 @@ const Banner = ({addBalance}) => {
         </div>
     );
 };
-
+Banner.prototype = {
+    addBalance: PropTypes.func.isRequired
+}
 export default Banner;
