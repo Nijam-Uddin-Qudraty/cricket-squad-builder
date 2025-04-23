@@ -6,7 +6,7 @@
     "role": "Batsman",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm medium",
-    "price": 1800,
+    "price": 5000,
     "image": "https://ui-avatars.com/api/?name=Virat+Kohli&background=random"
   },
   {
@@ -16,7 +16,7 @@
     "role": "All-Rounder",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "price": 1826,
+    "price": 4000,
     "image": "https://ui-avatars.com/api/?name=Joe+Root&background=random"
   },
   {
@@ -26,7 +26,7 @@
     "role": "All-Rounder",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm fast",
-    "price": 1660,
+    "price": 2000,
     "image": "https://ui-avatars.com/api/?name=Pat+Cummins&background=random"
   },
   {
@@ -36,7 +36,7 @@
     "role": "All-Rounder",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "price": 1490,
+    "price": 1000,
     "image": "https://ui-avatars.com/api/?name=Kane+Williamson&background=random"
   },
   {

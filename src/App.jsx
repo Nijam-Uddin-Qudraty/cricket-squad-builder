@@ -12,21 +12,21 @@ function App() {
     setBalance(prevBal=> prevBal += 10000);
   }
   const buyPlayer = (price) => {
-    setBalance((prev) => {
-      if (prev <= 0 || prev < price) {
-        return prev; 
-      } else {
-        return prev -= price; 
-      }
-    });
+    setBalance((prev) => prev -= price)
   };
+  const checkBalance = (price) => {
+    if (price < balance || balance <= 0) {
+      return false
+    }
+    return true
+  }
   
   
   return (
     <>
     
       <Head addBalance={addBalance} balance={balance}></Head>
-      <Players players = {players} buyPlayer = {buyPlayer}></Players>
+      <Players players = {players} buyPlayer = {buyPlayer} balance ={balance} checkBalance ={checkBalance}></Players>
       
     </>
   )
