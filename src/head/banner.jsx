@@ -1,6 +1,7 @@
 import React from 'react';
 import banner_img from '../assets/banner-main.png'
-import bg from '../assets/bg-shadow.png'
+import bg from '../assets/bg-shadow.png';
+
 const Banner = ({addBalance}) => {
     return (
         <div>
@@ -12,6 +13,7 @@ const Banner = ({addBalance}) => {
                 <button className='w-44 h-12 rounded-2xl bg-lime-300 hover:bg-lime-400 hover:shadow-xl transition-all' onClick={addBalance}>Claim Free Credit</button>
                 </div>
             </div>
+              {/* This renders the toast notifications */}
         </div>
     );
 };

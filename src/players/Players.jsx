@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Player from "./Player";
 import Selected from "./Selected";
+import { toast } from "react-toastify";
 
 const Players = ({ players, buyPlayer, checkBalance }) => {
 	// available players by default 
@@ -11,18 +12,36 @@ const Players = ({ players, buyPlayer, checkBalance }) => {
 	// selecting player 
 	const [selectedPlayer, setselectedPlayer] = useState([]);
 	const handleSelect = (player) => {
-		if (checkBalance(player)) {
+		
+			{
 			const checkbefore = selectedPlayer.find((p) => p.id == player.id);
-			if (!checkbefore && selectedPlayer.length <= 5) {
-				buyPlayer(player.price)
-				setselectedPlayer((prev) => [...prev, player])
+			if (selectedPlayer.length <= 5) {
+				if (!checkbefore) {
+					if (checkBalance(player.price)) {
+						buyPlayer(player.price)
+						toast.success("Player has been added")
+						setselectedPlayer((prev) => [...prev, player])
+					}
+					else {
+						toast.error("Insufficient balance")
+					}
+				}
+				else {
+					toast.info("Player already selected")
+				}
+			}
+			else {
+				toast.warn("Maximum player reached")
 			}
 		}
-	}; 
-	// removing player 
-	const removeSelectedPlayer = (id) => {
-		setselectedPlayer((prev)=>prev.filter((p)=>p.id !== id))
-	}
+		
+	};
+		// removing player 
+		const removeSelectedPlayer = (id) => {
+			setselectedPlayer((prev) => prev.filter((p) => p.id !== id));
+			toast.warning("Player removed")
+		}
+	
 	return (
 		<div>
 			{/* toggle toward sections  */}
