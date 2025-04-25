@@ -44,7 +44,7 @@ const Players = ({ players, buyPlayer, checkBalance }) => {
 		}
 	
 	return (
-		<div>
+		<div className="pb-32">
 			{/* toggle toward sections  */}
 			<div className="mt-14 max-w-screen-xl flex flex-col items-center lg:flex-row lg:justify-between ">
 				<div>

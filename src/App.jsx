@@ -5,6 +5,7 @@ import Players from './players/Players'
 import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import { GiPartyPopper } from "react-icons/gi";
+import Footer from "./footer/footer";
 function App() {
   const [players, setPlayers] = useState([]);
   useEffect(() => {
@@ -31,7 +32,8 @@ function App() {
     <div>
       <Head addBalance = { addBalance } balance = { balance } ></Head >
     <Players players={players} buyPlayer={buyPlayer} balance={balance} checkBalance={checkBalance}></Players>
-    <ToastContainer className=""></ToastContainer>
+    <Footer></Footer>
+      <ToastContainer className=""></ToastContainer>
     </div>
 
   )
