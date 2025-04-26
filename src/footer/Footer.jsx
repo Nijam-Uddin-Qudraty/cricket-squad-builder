@@ -6,7 +6,7 @@ const Footer = () => {
         <div className='relative'>
             <Newsletter></Newsletter>
             
-            <footer className="pt-32 bg-gray-800 text-white  px-4">
+            <footer className="pt-24 bg-gray-800 text-white  px-4">
             <div className='flex justify-center'>
                 <img src={footer_img} alt="" />
             </div>

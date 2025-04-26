@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const Newsletter = () => {
 	return (
-		<div className="absolute left-0 right-0 z-10 px-4">
+		<div className="absolute bottom-[400px] left-0 right-0 z-10  px-4">
 			<div className="  max-w-md mx-auto bg-white rounded-lg shadow-md p-6">
 				<h2 className="text-2xl font-bold text-center mb-4">
 					Subscribe to our Newsletter
